@@ -1,0 +1,15 @@
+.center .slick-center {
+  transform: scale(1.2); /* Adjust the scale as needed to make the center slide bigger */
+}
+
+.slick-list {
+  padding: 5rem 0 !important;
+}
+
+.slick-active {
+  opacity: 0.8;
+  &.slick-current {
+    opacity: 1;
+  }
+}
+

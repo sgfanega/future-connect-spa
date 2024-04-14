@@ -1,0 +1,24 @@
+@use 'colors';
+
+.custom-link-primary {
+  color: colors.$text-primary-color;
+  &:hover {
+    filter: brightness(85%);
+  }
+}
+
+.custom-hr-primary {
+  margin: 0 auto;
+  border: 5px solid colors.$primary-color;
+  border-radius: 5rem;
+  width: 5rem;
+  opacity: 1;
+}
+
+.custom-hr-tertiary {
+  margin: 0 auto;
+  border: 5px solid colors.$tertiary-color;
+  border-radius: 5rem;
+  width: 5rem;
+  opacity: 1;
+}
