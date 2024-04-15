@@ -49,41 +49,43 @@ export default function Home() {
       </section>
     
       <section className="container-fluid home-about-us bg-body-tertiary overflow-hidden" style={aboutUsStyle}>
-        <div className="row justify-content-center gy-5">
-          <div className="col-10 col-md-3 col-xxl-2 align-self-center">
-            <h2 className="display-1 fw-medium text-secondary text-center">What <br/>We Do</h2>
-            <hr className="custom-hr-primary"/>
-          </div>  
-          <div className="col-10 col-md-7 col-xl-5 col-xxl-3">
-            <p className="fs-4 text-md-end text-secondary">At Future Connect, we guide individuals to their own unique path of success, whether it is to attend their dream college/university,
-            or become professionals in the healthcare industry. We believe in delivering you services that provide long-lasting connections, a detailed action plan,
-            and walk you through the process comfortably and efficiently.</p>
+        <div className="container">
+          <div className="row justify-content-center gy-5">
+            <div className="col-10 col-md-3 col-xxl-3 align-self-center">
+              <h2 className="display-1 fw-medium text-secondary text-center">What <br/>We Do</h2>
+              <hr className="custom-hr-primary"/>
+            </div>  
+            <div className="col-10 col-md-7 col-xl-5 col-xxl-6">
+              <p className="fs-4 text-md-end text-secondary">At Future Connect, we guide individuals to their own unique path of success, whether it is to attend their dream college/university,
+              or become professionals in the healthcare industry. We believe in delivering you services that provide long-lasting connections, a detailed action plan,
+              and walk you through the process comfortably and efficiently.</p>
+            </div>
           </div>
-        </div>
-        <div className="row justify-content-center pt-5">
-          <div className="col-10 col-xl-7 col-xxl-5 text-center">
-          <p className="fs-4 text-secondary">&quot;At Future Connect, we believe that every successful story once started with a dream. So dream big, share it with us, and we will help you make it happen.&quot;</p>
-          <p className="fs-6 fst-italic text-black-50">- Future Connect Team</p>
+          <div className="row justify-content-center pt-5">
+            <div className="col-10 col-xl-7 col-xxl-8 text-center">
+            <p className="fs-4 text-secondary">&quot;At Future Connect, we believe that every successful story once started with a dream. So dream big, share it with us, and we will help you make it happen.&quot;</p>
+            <p className="fs-6 fst-italic text-black-50">- Meca Fanega, Founder</p>
+            </div>
           </div>
-        </div>
-        <div className="row justify-content-center text-center pt-5 gy-2">
-          <div className="col-12 col-lg-6 col-xl-6 col-xxl-4">
-            <p className="display-1 fw-bold text-secondary mb-0">
-              <CountUp end={34200635.63} decimals={2} duration={5} prefix="$"/><span className="text-tertiary">+</span>
-            </p>
-            <p className="fs-5 fw-bold text-secondary mb-0">assisted in Scholarship Funds</p>
-          </div>
-          <div className="col-12 col-md-4 col-lg-2 col-xxl-2">
-            <p className="display-1 fw-bold text-secondary mb-0">
-              <CountUp end={50} duration={5}/><span className="text-tertiary">+</span>
-            </p>
-            <p className="fs-5 fw-bold text-secondary mb-0">Collges & Universities</p>
-          </div>
-          <div className="col-12 col-md-2 col-lg-2 col-xxl-1">
-            <p className="display-1 fw-bold text-secondary mb-0">
-              <CountUp end={15} duration={5}/><span className="text-tertiary">+</span>
-            </p>
-            <p className="fs-5 fw-bold text-secondary mb-0">Countries</p>
+          <div className="row justify-content-center text-center pt-5 gy-2">
+            <div className="col-12 col-lg-6 col-xl-6 col-xxl-6">
+              <p className="display-1 fw-bold text-secondary mb-0">
+                <CountUp end={34200635.63} decimals={2} duration={8} prefix="$"/><span className="text-tertiary">+</span>
+              </p>
+              <p className="fs-5 fw-bold text-secondary mb-0">assisted in Scholarship Funds</p>
+            </div>
+            <div className="col-12 col-md-4 col-lg-2 col-xxl-2">
+              <p className="display-1 fw-bold text-secondary mb-0">
+                <CountUp end={50} duration={8}/><span className="text-tertiary">+</span>
+              </p>
+              <p className="fs-5 fw-bold text-secondary mb-0">Colleges & Universities</p>
+            </div>
+            <div className="col-12 col-md-2 col-lg-2 col-xxl-2">
+              <p className="display-1 fw-bold text-secondary mb-0">
+                <CountUp end={15} duration={8}/><span className="text-tertiary">+</span>
+              </p>
+              <p className="fs-5 fw-bold text-secondary mb-0">Countries</p>
+            </div>
           </div>
         </div>
       </section>
