@@ -1,3 +1,4 @@
+"use client";
 
 import React from "react";
 import Slider from "react-slick";
@@ -5,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function CarouselCenterMode() {
+  
   const articleStyle = {
     aspectRatio: "1 / 1"
   } as React.CSSProperties;
@@ -15,8 +17,9 @@ export default function CarouselCenterMode() {
     infinite: true,
     centerPadding: "0",
     slidesToShow: 3,
-    speed: 2000
+    speed: 3000
   };
+
   return (
     <div className="slider-container">
       <Slider {...settings}>

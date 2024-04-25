@@ -1,15 +1,28 @@
 .center .slick-center {
-  transform: scale(1.2); /* Adjust the scale as needed to make the center slide bigger */
+  transform: scale(1.2);
 }
 
 .slick-list {
-  padding: 5rem 0 !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
-.slick-active {
+.slick-slide {
   opacity: 0.8;
+
   &.slick-current {
     opacity: 1;
+    & article {
+      box-shadow: 5px 5px;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slick-slide {
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
