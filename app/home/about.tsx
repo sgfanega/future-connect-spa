@@ -44,7 +44,7 @@ export default function About({ whatWeDoDescription, missionStatement, collegeFu
           </p>
           <p className="fs-5 fw-bold text-secondary mb-0">assisted in Scholarship Funds</p>
         </div>
-        <div className="col-12 col-md-4 col-lg-2 col-xxl-2">
+        <div className="col-12 col-md-4 col-lg-4 col-xxl-2">
           <p className="display-1 fw-bold text-secondary mb-0">
             <CountUp end={collegesAndUniversities} duration={10}/><span className="text-tertiary">+</span>
           </p>
