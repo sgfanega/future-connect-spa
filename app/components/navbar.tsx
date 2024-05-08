@@ -55,10 +55,10 @@ export default function Navbar() {
     <section className="topbar container-fluid d-none d-md-block bg-primary py-1">
       <div className="container">
         <div className="row">
-          <div className="col-7 offset-2 col-lg-7 offset-lg-2 col-xl-5 offset-xl-3 col-xxl-4 offset-xxl-4 text-center">
+          <div className="col-md-8 col-lg-6 offset-lg-3 col-xl-5 offset-xl-4">
             <p className="fs-6 fw-medium text-secondary mb-0">Welcome to Future Connect, your destination for success!</p>
           </div>
-          <div className="col-2 offset-1 offset-xl-2 text-end">
+          <div className="col-md-4 col-lg-2 offset-lg-1">
             <div className="d-flex justify-content-end">
               <Image
                 className="img-fluid me-3"
