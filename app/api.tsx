@@ -22,7 +22,7 @@ async function fetchData(query: string) {
 }
 
 // Retrieves data from about us page
-export async function getAboutUsPageContent() {
+export function getAboutUsPageContent() {
   const query = `
   query getAboutUsPageContent {
     pages(where: {title: "About Us"}) {
@@ -58,6 +58,30 @@ export function getCounterContent() {
         }
       }
     }
+  `;
+
+  return fetchData(query);
+}
+
+export function getFrontPageContent() {
+  const query = `
+  query getFrontPageContent {
+    pages(where: {title: "Home"}) {
+      nodes {
+        home {
+          collegeFund
+          collegesAndUniversities
+          countries
+          healthcareDescription
+          intlAdmissionDescription
+          missionStatement
+          tagline
+          title
+          whatWeDoDescription
+        }
+      }
+    }
+  }
   `;
 
   return fetchData(query);
