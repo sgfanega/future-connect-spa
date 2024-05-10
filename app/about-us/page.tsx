@@ -5,7 +5,7 @@ import { getAboutUsPageContent, getCounterContent } from "../api";
 import Counter from "./counter";
 import ContactForm from "../components/contactForm";
 
-export default async function Page() {
+export default async function AboutUs() {
 
   const data = await getAboutUsPageContent();
 
