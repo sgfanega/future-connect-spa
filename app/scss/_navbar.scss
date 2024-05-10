@@ -23,17 +23,27 @@
   }
   .navbar-nav {
     .nav-link {
-        color: colors.$text-primary-color;
-        background-image: linear-gradient(colors.$primary-color, colors.$primary-color);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 3px;
-        transition: background-size 0.3s;
-        margin: 0 1rem;
-        padding: 0 0 0.3rem 0;
+      color: colors.$text-primary-color;
+      background-image: linear-gradient(colors.$primary-color, colors.$primary-color);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 3px;
+      transition: background-size 0.3s;
+      margin: 0 1rem;
+      padding: 0 0 0.3rem 0;
       &.active, &:hover {
         color: colors.$primary-color;
         background-size: 100% 3px;
+      }
+    }
+    .dropdown-menu {
+      background-color: colors.$body-secondary-color;
+      a {
+        color: colors.$text-primary-color;
+        &:hover {
+          background-color: colors.$primary-color;
+          color: colors.$text-secondary-color;
+        }
       }
     }
   }
