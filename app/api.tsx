@@ -22,7 +22,7 @@ async function fetchData(query: string) {
 }
 
 // Retrieves data from about us page
-export function getAboutUsPageContent() {
+export async function getAboutUsPageContent() {
   const query = `
   query getAboutUsPageContent {
     pages(where: {title: "About Us"}) {
@@ -45,7 +45,7 @@ export function getAboutUsPageContent() {
 }
 
 // Retrieves counter data from about us section in home page
-export function getCounterContent() {
+export async function getCounterContent() {
   const query = `
     query getFrontPageContent {
       pages(where: {title: "Home"}) {
@@ -63,7 +63,7 @@ export function getCounterContent() {
   return fetchData(query);
 }
 
-export function getFrontPageContent() {
+export async function getFrontPageContent() {
   const query = `
   query getFrontPageContent {
     pages(where: {title: "Home"}) {
