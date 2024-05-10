@@ -15,9 +15,9 @@ export default function Navbar() {
     "Home": "/",
     "About Us": "/about-us",
     "Services": {
-      "Int'l Studies": "/international-studies",
-      "Nursing": "/nursing",
-      "CNA": "/cna"
+      "Int'l Studies": "/services/international-studies",
+      "Nursing": "/services/nursing",
+      "CNA": "/services/cna"
     },
     "Blog": "/blog"
   }
