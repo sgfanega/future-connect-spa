@@ -1,7 +1,7 @@
 import Image from "next/image";
 import DOMPurify from "isomorphic-dompurify";
 import Breadcrumbs from "../components/breadcrumbs";
-import { getAboutUsPageContent, getCounterContent } from "../api";
+import { getAboutUsPageContent, getCounterContent } from "../lib/wordpress";
 import Counter from "./counter";
 import ContactForm from "../components/contactForm";
 

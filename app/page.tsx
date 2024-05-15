@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { getFrontPageContent } from "./api";
+import { getFrontPageContent } from "./lib/wordpress";
 import Banner from "./home/banner";
 import Loading from "./components/loading";
 import About from "./home/about";
