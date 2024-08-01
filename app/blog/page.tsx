@@ -1,8 +1,6 @@
 import { getAboutUsPageContent } from "../lib/wordpress";
 
 export default async function Blog() {
-  
-  const testData = await getAboutUsPageContent();
 
   return (
     <main className="blog w-100 h-100 d-flex align-items-center justify-content-center" style={{minHeight: "60dvh"}}>

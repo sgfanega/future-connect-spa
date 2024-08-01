@@ -1,19 +1,27 @@
-const bannerImageUrl = '/home/banner-image.jpg';
 
-const bannerStyle = {
-  minHeight: "70dvh",
-  position: "relative",
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bannerImageUrl})`,
-  backgroundPosition: "60% 30%",
-  backgroundSize: "cover"
-} as React.CSSProperties;
 
 interface Banner {
   companyName: string;
   tagLine: string;
+  imageSrc: ImageSrc;
 }
 
-export default function Banner({ companyName, tagLine} : Banner) {
+interface ImageSrc {
+  altText: string;
+  title: string;
+  sourceUrl: string;
+}
+
+export default async function Banner({ companyName, tagLine, imageSrc} : Banner) {  
+
+  const bannerStyle = {
+    minHeight: "70dvh",
+    position: "relative",
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageSrc.sourceUrl})`,
+    backgroundPosition: "60% 30%",
+    backgroundSize: "cover"
+  } as React.CSSProperties;
+
   return (
   <section className="container-fluid home-banner d-flex flex-column justify-content-center align-items-center" style={bannerStyle}>
     <h1 className="display-1 fw-bold text-tertiary text-uppercase">{companyName}</h1>

@@ -78,6 +78,27 @@ export async function getFrontPageContent() {
           tagline
           title
           whatWeDoDescription
+          healthcareImage {
+            node {
+              altText
+              sourceUrl
+              title
+            }
+          }
+          bannerBackgroundImage {
+            node {
+              altText
+              sourceUrl
+              title
+            }
+          }
+          intlAdmissionImage {
+            node {
+              altText
+              sourceUrl
+              title
+            }
+          }
         }
       }
     }

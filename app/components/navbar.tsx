@@ -63,14 +63,14 @@ export default function Navbar() {
               <Image
                 className="img-fluid me-3"
                 src={linkedInLogo}
-                alt=""
+                alt="LinkedIn Link"
                 height={23}
                 width={23}
                 />
               <Image
                 className="img-fluid"
                 src={facebookLogo}
-                alt=""
+                alt="Facebook Link"
                 height={23}
                 width={23}
                 />
@@ -96,7 +96,7 @@ export default function Navbar() {
           <ul className="navbar-nav ms-auto">
             {html}
           </ul>
-          <a href="" className="btn btn-primary fw-medium ms-lg-3">Learn More</a>
+          <a href="/services" className="btn btn-primary fw-medium ms-lg-3">Learn More</a>
         </div>
       </div>
     </nav>

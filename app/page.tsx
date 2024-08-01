@@ -11,16 +11,16 @@ export default async function Home() {
   const data = await getFrontPageContent();
 
   const homeData = data.home;
-  
+
   return (
     <main className="home">
       <Suspense fallback={<Loading/>}>
-        <Banner companyName={homeData.title} tagLine={homeData.tagline}/>
+        <Banner companyName={homeData.title} tagLine={homeData.tagline} imageSrc={homeData.bannerBackgroundImage.node}/>
         <About whatWeDoDescription={homeData.whatWeDoDescription} missionStatement={homeData.missionStatement} collegeFund={homeData.collegeFund}
           collegesAndUniversities={homeData.collegesAndUniversities} countries={homeData.countries}
         />
         <Services intlAdmissionDescription={homeData.intlAdmissionDescription} healthcareDescription={homeData.healthcareDescription}/>
-        <Blog/>
+        {/* <Blog/> */}
         <Contact/>
       </Suspense>
     </main>

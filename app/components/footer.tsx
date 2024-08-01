@@ -24,7 +24,6 @@ export default function footer() {
               <li><a href="/about-us" className="text-decoration-none custom-link-primary">About Us</a></li>
               <li><a href="/blog" className="text-decoration-none custom-link-primary">Blog</a></li>
               <li><a href="/privacy-policy" className="text-decoration-none custom-link-primary">Privacy Policy</a></li>
-              <li><a href="/ca-privacy-policy" className="text-decoration-none custom-link-primary">CA Privacy Policy</a></li>
             </ul>
           </div>
           <div className="col-4 col-md-3">
